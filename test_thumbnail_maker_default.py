@@ -1,3 +1,9 @@
+"""
+- Put  thumbnail_maker_default.py <main file>   and  test_thumbnail_maker_default.py <corresponding unittest module> in same folder> in one folder
+- Have pytest module installed in server via pip
+- run  "pytest" from that folder  => to do the tests mentioned in the unittest module
+"""
+
 from thumbnail_maker_default import ThumbnailMakerService
 
 IMG_URLS = \
@@ -29,6 +35,6 @@ IMG_URLS = \
      'https://dl.dropboxusercontent.com/s/rleff9tx000k19j/pexels-photo-341520.jpeg'
     ]
     
-def test_thumbnail_maker():
+def test_thumbnail_maker_default():
     tn_maker = ThumbnailMakerService()
     tn_maker.make_thumbnails(IMG_URLS)
